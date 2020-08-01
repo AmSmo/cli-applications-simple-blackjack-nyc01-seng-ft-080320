@@ -48,12 +48,6 @@ def hit?(total)
     invalid_command
     hit?(total)
   end
-  #   display_card_total(answer)
-  # # elsif input = "h"
-  #   new_card =deal_card
-  #   total = new_card + answer
-  #   display_card_total(total)
-  # end
   total
 end
 
@@ -70,7 +64,7 @@ def runner
   # code runner here
   welcome
   cards = initial_round
-  until cards > 21
+  until cards > 21 
     cards = hit?(cards)
     display_card_total(cards)
   end
